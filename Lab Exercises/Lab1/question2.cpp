@@ -4,6 +4,8 @@
 using namespace std;
 int main()
 {
+
+    
 int numbers[10];
 int greatest = 0;
 
