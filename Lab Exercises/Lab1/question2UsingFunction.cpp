@@ -5,15 +5,11 @@ void getArray(int numbers[], int size) {
     for (int i = 0; i < size; i++) {
         cout << "Enter a  number: ";
         cin >> numbers[i];
-        while (numbers[i] <= 0) {
-            cout << "Please enter a  number: ";
-            cin >> numbers[i];
-        }
     }
 }
 
 int findGreatest(int numbers[], int size) {
-    int greatest = numbers[0]; 
+    int greatest = numbers[0]; //suppose
     for (int i = 1; i < size; i++) {
         if (numbers[i] > greatest) {
             greatest = numbers[i];
