@@ -6,14 +6,14 @@ void getArray(int numbers[], int size) {
         cout << "Enter a  number: ";
         cin >> numbers[i];
         while (numbers[i] <= 0) {
-            cout << "Please enter a positive number: ";
+            cout << "Please enter a  number: ";
             cin >> numbers[i];
         }
     }
 }
 
 int findGreatest(int numbers[], int size) {
-    int greatest = numbers[0]; // Initialize with the first element
+    int greatest = numbers[0]; 
     for (int i = 1; i < size; i++) {
         if (numbers[i] > greatest) {
             greatest = numbers[i];
