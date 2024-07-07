@@ -19,12 +19,12 @@ void inputInfo(struct student *p, int size) {
 }
 void displayInfo(struct student *p, int size) {
    for (int i = 0; i < size; i++) {
-    cout << " The name is"<<(p + i)->name << " The roll number is"<< (p + i)->roll <<" The marks is "<<(p + i)->marks;
+    cout << "\nThe name is "<<(p + i)->name << "\nThe roll number is "<< (p + i)->roll <<" \nThe marks is "<<(p + i)->marks<<"\n\n";
   }
 }
-void greatestMarks(struct student *p, int s) {
+void greatestMarks(struct student *p, int size) {
   struct student *temp = p;
-  for (int i = 0; i < s; i++)
+  for (int i = 0; i < size; i++)
   {
 if(temp->marks< (p+i)->marks){
   temp = (p + i);
@@ -32,9 +32,9 @@ if(temp->marks< (p+i)->marks){
   }
   displayInfo(temp, 1);
 }
-void sort(struct student *p, int s) {
-  for (int i = 0; i < s; i++){
-    for (int j = i + 1; j < s; j++){
+void sort(struct student *p, int size) {
+  for (int i = 0; i < size; i++){
+    for (int j = i + 1; j < size; j++){
       if((p+i)->marks< (p+j)->marks){
         struct student *temp;
         temp = (p + i);
@@ -43,11 +43,12 @@ void sort(struct student *p, int s) {
       }
     }
   }
+  cout << "The information after sorting is \n";
 }
 
 int main(){
   int size;
-  cout << "Enter the number of students";
+  cout << "Enter the number of students \n";
   cin >> size;
   struct student s[size];
   inputInfo(s, size);
