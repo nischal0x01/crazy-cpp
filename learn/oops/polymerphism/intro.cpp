@@ -17,18 +17,18 @@ public:
 
 class Rectangle : public Shape {
 public:
-  Rectangle(int a = 0, int b = 0) : Shape(a, b) { Shape(a, b); }
+  Rectangle(int a = 0, int b = 0) : Shape(a, b){};
   int area() {
-    cout << "The area is: " << width * breadth << endl;
+    cout << "The area of rectangle is: " << width * breadth << endl;
     return 0;
   }
 };
 
 class Triangle : public Shape {
 public:
-  Triangle(int a = 0, int b = 0) : Shape(a, b) { Shape(a, b); }
+  Triangle(int a = 0, int b = 0) : Shape(a, b){};
   int area() {
-    cout << " The triangle area  is" << breadth * width / 2 << endl;
+    cout << " The triangle area is: " << breadth * width / 2 << endl;
     return 0;
   }
 };
