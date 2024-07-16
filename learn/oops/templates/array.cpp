@@ -19,11 +19,11 @@ int main() {
   cin >> size;
 
   cout << "Enter the numbers" << endl;
-  float arr[size];
+  int arr[size];
   for (int i = 0; i < size; i++) {
     cin >> arr[i];
   }
-  float result = GetMax<float>(arr, size);
+  float result = GetMax<int>(arr, size);
   cout << "The maximum number from the array is  " << result << endl;
   return 0;
 }
