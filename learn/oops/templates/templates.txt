@@ -1,0 +1,6 @@
+
+It is a new concept which enable us to defin a generic classes and functions thus providing support to the generic programming>
+
+Generic programming is an approach where generic type is used as parameter so that they work for variety of data types and data structures.
+A template is used to create family of classes or functions.
+For example, a class template for creating array would enable us to create arrays of various of data types such as int, float, double etc.
