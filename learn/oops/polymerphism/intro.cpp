@@ -10,7 +10,7 @@ public:
     breadth = b;
   }
   virtual int area() {
-    cout << "the area is: " << endl;
+    cout << "the parent class area is: " << endl;
     return 0;
   }
 };
