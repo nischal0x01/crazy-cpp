@@ -9,9 +9,8 @@ int main() {
   try {
     if (size > 5)
       throw 10;
-
     if (size < 0)
-      throw 2;
+      throw 2.5f;
   } catch (int x) {
     cout << "The size of array mustn't exceed 5" << endl;
   } catch (float x) {
